@@ -1,12 +1,12 @@
-// src/app/app.ts
+// src/app/inicio.ts
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-inicio',
   standalone: true,
   imports: [RouterModule],
-  template: `<router-outlet></router-outlet>`,
-  styleUrls: ['./app.scss']
+  templateUrl: './inicio.html',
+  styleUrls: ['./inicio.scss']
 })
-export class App {}
+export class Inicio {}

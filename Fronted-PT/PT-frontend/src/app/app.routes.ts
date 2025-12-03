@@ -1,12 +1,12 @@
+// src/app/app.routes.ts
 import { Routes } from '@angular/router';
-import { LoginComponent } from './auth/login/login';
-import { TaskList } from './tasks/task-list/task-list';
-import { Dashboard } from './tasks/dashboard/dashboard';
+import { Inicio } from './paginas/inicio/inicio';
+import { LoginComponent } from './paginas/login/login';
+import { Crud } from './paginas/crud/crud';
 
 export const routes: Routes = [
-  { path: 'auth', component: LoginComponent },
-  { path: 'tasks', component: TaskList },
-  { path: 'dashboard', component: Dashboard },
-  { path: '', redirectTo: 'auth', pathMatch: 'full' },
-  { path: '**', redirectTo: 'auth' }
+  { path: '', component: Inicio },
+  { path: 'login', component: LoginComponent },
+  { path: 'crud', component: Crud },
+  { path: '**', redirectTo: '' }
 ];

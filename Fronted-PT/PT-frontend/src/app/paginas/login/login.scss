@@ -1,0 +1,56 @@
+/* Contenedor centrado */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2a9d8f, #264653);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+/* Formulario de login */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 350px;
+}
+
+input {
+  padding: 12px 15px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #e9c46a;
+}
+
+button {
+  padding: 12px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #264653;
+  background-color: #e9c46a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #f4a261;
+  transform: translateY(-2px);
+}

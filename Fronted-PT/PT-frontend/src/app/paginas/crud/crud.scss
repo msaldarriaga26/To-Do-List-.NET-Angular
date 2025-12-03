@@ -1,0 +1,84 @@
+/* Contenedor centralizado */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #2a9d8f, #264653);
+  color: #fff;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+}
+
+/* Input y botón de agregar */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  flex: 1;
+  max-width: 300px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #e9c46a;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #264653;
+  background-color: #e9c46a;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #f4a261;
+  transform: translateY(-2px);
+}
+
+/* Lista de items */
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+li button {
+  background-color: #e76f51;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+}
+
+li button:hover {
+  background-color: #f4a261;
+}
